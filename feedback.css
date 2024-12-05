@@ -1,0 +1,164 @@
+/* Mengubah font untuk seluruh halaman */
+body {
+  font-family: 'Lora', serif;
+  background-color: #e0f7fa;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  color: #32305d;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, color 0.3s ease;
+  animation: bounce 1s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Gaya header */
+header {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+}
+
+/* Efek hover untuk menambah skala pada judul */
+h2:hover {
+  transform: scale(1.1);
+  color: #0277bd;
+  text-shadow: 0px 4px 6px rgba(2, 136, 209, 0.4);
+}
+
+.bg-white {
+  background-color: #e3f2fd;
+  border-radius: 0.5rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bg-white:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  color: #546e7a;
+  font-family: 'Lora', serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10; /* Pastikan tetap di atas elemen lainnya */
+  background-color: rgba(31, 41, 55, 0.8); /* Latar belakang */
+  backdrop-filter: blur(10px); /* Opsional */
+}
+
+
+/* Gaya hover pada bintang */
+.star {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.star:hover {
+  transform: scale(1.3);
+  color: #29b6f6;
+}
+
+.selected {
+  color: #64b5f6;
+}
+
+/* Animasi untuk Emotikon */
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#emojiContainer {
+  transition: transform 0.3s ease;
+}
+
+#emoji {
+  animation: scaleUp 0.3s ease;
+}
+
+/* Upload area */
+.upload-area {
+  background-color: #a8a8b8; /* Sama dengan warna header/footer */
+  border: 2px dashed #6b7280; /* Garis putus-putus warna abu-abu */
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  color: #d1d5db; /* Warna teks yang lebih terang */
+}
+
+.upload-area:hover {
+  background-color: #474658; /* Sedikit lebih terang saat hover */
+}
+
+/* Placeholder teks */
+.upload-area #fileName {
+  color: #d1d5db; /* Warna teks lebih terang */
+}
+
+
+/* Gaya tombol submit */
+button {
+  background: linear-gradient(90deg, #039be5, #0288d1);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 15px rgba(3, 155, 229, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Lora', serif;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #0277bd, #01579b);
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(3, 155, 229, 0.6);
+}
+
+/footer {
+  font-family: 'Poppins', sans-serif;
+}
+footer h1 {
+  font-weight: 700; /* Bold untuk heading di footer */
+}
+footer p, footer a {
+  font-weight: 400; /* Normal untuk teks lain di footer */
+}
+footer a {
+  text-decoration: none; /* Untuk memastikan link tetap rapi */
+  color: inherit; /* Sesuaikan warna dengan parent */
+}
+
+
+/* Feedback Form Custom Styles */
+@media (min-width: 768px) {
+  section.flex > div {
+    gap: 2rem;
+  }
+}
+
+#lottie-container {
+  width: 100%;
+  max-width: 300px;
+}
