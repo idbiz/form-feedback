@@ -76,7 +76,10 @@
       <p class="text-gray-500 text-center mb-8 text-lg">Please share your experience.</p>
   
       <div class="mb-6">
-        <label for="category" class="block text-gray-700 font-semibold mb-2 text-base">Feedback Category*</label>
+        <label for="category" class="block text-gray-700 font-semibold mb-2 text-base">
+          Feedback Category
+          <span class="text-red-600">*</span>
+        </label>        
         <select id="category" class="w-full px-5 py-4 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 text-base">
           <option value="" disabled selected hidden>Select category</option>
           <option>Service Quality</option>
@@ -87,12 +90,12 @@
       </div>
   
       <div id="otherNote" class="mb-6 hidden">
-        <label for="otherNoteText" class="block text-gray-700 font-semibold mb-2 text-base">Please specify</label>
+        <label for="otherNoteText" class="block text-gray-700 font-semibold mb-2 text-base">Please specify</label><span class="text-red-600">*</span>
         <textarea id="otherNoteText" rows="3" class="w-full px-5 py-4 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-700 text-base" placeholder="Enter feedback category"></textarea>
       </div>
   
       <div class="text-center mb-4">
-        <p class="text-gray-700 font-semibold text-lg">How would you rate our service?*</p>
+        <p class="text-gray-700 font-semibold text-lg">How would you rate our service?</p><span class="text-red-600">*</span>
       </div>
       <div class="flex justify-center mb-8" id="starRating">
         <!-- Stars -->
@@ -114,7 +117,7 @@
       </div>
   
       <div class="mb-6">
-        <label for="comment" class="block text-gray-700 font-semibold mb-2 text-base">Comments*</label>
+        <label for="comment" class="block text-gray-700 font-semibold mb-2 text-base">Comments</label><span class="text-red-600">*</span>
         <textarea id="comment" rows="5" class="w-full px-5 py-4 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-700 text-base" placeholder="Share your experience here"></textarea>
       </div>
   

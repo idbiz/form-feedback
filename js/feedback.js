@@ -9,7 +9,6 @@ stars.forEach(star => {
   star.addEventListener('click', () => {
     selectedRating = star.getAttribute('data-value'); // Dapatkan nilai rating
     highlightStars(selectedRating); // Highlight bintang sesuai rating
-    updateEmoji(selectedRating); // Tampilkan emotikon sesuai rating
   });
 });
 
@@ -77,9 +76,6 @@ function clearForm() {
   // Reset input file
   photoInput.value = '';
   fileNameSpan.textContent = 'Choose a file...';
-  
-  // Kosongkan emoji
-  emojiContainer.textContent = '';
   
   // Reset rating bintang
   selectedRating = 0; // Reset nilai rating
